@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            CONTACT
+        </title>
+        <link rel="stylesheet" type="text/css" href="Contact.css">
+        <script type="text/javascript">
+        function formVal() {
+        var name = document.forms["regform"]["name"]
+        var email = document.forms["regform"]["email"]
+        var message = document.forms["regform"]["message"]
+        if (name.value == "" || message.length <20) {
+            window.alert("Please Enter your name");
+            } 
+        }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+        <DIV id="main">
+            <h3> CONTACT US </h3>
+        </DIV>
+        <DIV id="sub">
+            <form name="regform" onsubmit="return formVal()" method="POST">
+                <span id="med">NAME: <input type="text" name="name">
+                <br></span>
+                <span id="med">EMAIL: <input type="email" name="email">
+                <br></span>
+                <span id="med">
+                TITLE: <input type="text" name="title">
+                <br></span>
+                <span id="med">
+                MESSAGE: 
+                <br>
+                <textarea type="text" name="message"> 
+                </textarea><br>
+                <input type="submit" value="submit">
+                </span>
+
+            </form>
+        </DIV>
+        </div>
+    </body>
+</html>
